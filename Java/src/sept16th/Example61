@@ -1,0 +1,22 @@
+package sept16th;
+import java.util.*;
+//👆此类用到了java.util.ArrayList和java.util.Iterator,故此处导入了java.util下的所有包.
+public class Example61{
+    public static void main(String[] args) {
+        ArrayList a=new ArrayList();
+        a.add("data_1");
+        a.add("data_2");
+        a.add("data_3");
+
+        Iterator b=a.iterator();
+//      👆迭代器创建对象格式: Iterator 迭代器对象名=集合类型的对象名.iterator();
+        while(b.hasNext()){
+//              👆此方法会判断当前指针后是否还有元素
+            Object c=b.next();
+//                      👆此方法会使当前指针向后移动一个下标
+            System.out.println(c);
+        }
+    }
+}
+//特别说明:迭代器在获取ArrayList集合中的元素时,会将每个元素作为Object数据类型看待.
+//如果想得到特定类型的元素,则需要对Object数据进行强制类型转换.

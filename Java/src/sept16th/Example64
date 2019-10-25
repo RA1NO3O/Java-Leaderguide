@@ -1,0 +1,16 @@
+package sept16th;
+import java.util.HashSet;
+import java.util.Iterator;
+public class Example64{
+    public static void main(String[] args) {
+        HashSet a = new HashSet();
+        a.add("A");
+        a.add("B");
+        a.add("B");
+        Iterator b=a.iterator();
+        while(b.hasNext()){
+            Object c=b.next();
+            System.out.println(c);
+        }
+    }
+}

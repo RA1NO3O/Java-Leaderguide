@@ -1,0 +1,20 @@
+1:package oct11th;
+2:
+3:import java.io.FileReader;
+4:import java.io.FileWriter;
+5:import java.io.LineNumberReader;
+6:
+7:public class Example85{
+8:    public static void main(String[] args)throws Exception{
+9:        FileReader a=new FileReader("Example85.java");      //创建字符输入流
+10:        FileWriter b=new FileWriter("copy.txt");       //创建字符输出流
+11:        LineNumberReader c=new LineNumberReader(a);     //使用LineNumberReader包装FileReader对象
+12:        c.setLineNumber(0);         //设置读取文件的起始行号
+13:        String line=null;
+14:        while((line=c.readLine())!=null){
+15:            b.write(c.getLineNumber()+":"+line);        //将行号写入到文件中
+16:            b.write("\r\n");           //写入换行符
+17:        }
+18:        c.close();  b.close();
+19:    }
+20:}

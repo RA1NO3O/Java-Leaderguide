@@ -1,0 +1,16 @@
+package sept16th;
+import java.util.Enumeration;
+import java.util.Vector;
+public class Example62{
+    public static void main(String[] args) {
+        Vector a=new Vector();
+        a.add("Jackal");
+        a.add("Tomy");
+        a.add("Rosie");
+        Enumeration b =a.elements();
+        while(b.hasMoreElements()){
+            Object c=b.nextElement();
+            System.out.println(c);
+        }
+    }
+}

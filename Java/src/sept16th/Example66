@@ -1,0 +1,17 @@
+package sept16th;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Example66{
+    public static void main(String[] args){
+        TreeSet a=new TreeSet();
+        a.add("C");
+        a.add("B");
+        a.add("B");
+        a.add("A");
+        Iterator b=a.iterator();
+        while(b.hasNext()){
+            System.out.println(b.next());
+        }
+    }
+}

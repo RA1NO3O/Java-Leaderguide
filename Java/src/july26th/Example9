@@ -1,0 +1,11 @@
+package july26th;
+public class Example9{
+    public static void main(String[] args){
+        Student stu1=new Student();
+        Student stu2=new Student();
+        Student.schoolName="abc";   //静态变量访问格式(类名.变量名)
+        //而通常变量的访问格式是"对象名.变量名"(参考july17th.Example3.5)
+        System.out.println("我的学校是"+stu1.schoolName);
+        System.out.println("我的学校是"+stu2.schoolName);
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Java内部终端",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "Java外部终端",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": "",
+            "projectName": "Java"
+        }
+    ]
+}

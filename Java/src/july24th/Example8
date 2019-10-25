@@ -1,0 +1,18 @@
+//垃圾回收
+package july24th;
+public class Example8{
+    public static void main(String[] args){
+        ext p1=new ext();
+        ext p2=new ext();
+        //将p1,p2重置为null;让对象成为垃圾
+        p1=null;
+        p2=null;
+        System.gc();        //调用方法通知java系统进行垃圾回收,并调用finalize方法
+
+        for(int i=0;i<1000000;i++){
+            //仅用于短暂延长程序运行时间(顺便体验一下CPU的运算速度有多快)
+            //java系统的垃圾回收操作是在后台完成的,程序结束后,垃圾回收的操作也将终止
+            //利用这个无意义的循环来拖慢垃圾回收的过程.
+        }
+    }
+}
