@@ -1,0 +1,15 @@
+final class A{
+    public final void x(){
+        System.out.println("a");
+    }
+}
+class B extends A{
+    public void x(){
+        System.out.println("b");
+    }
+}
+class Test02{
+    public static void main(String[] args){
+        B b = new B();
+    }
+}

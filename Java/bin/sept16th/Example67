@@ -1,0 +1,20 @@
+package sept16th;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.HashMap;
+import java.util.Map;
+public class Example67{
+    public static void main(String[] args) {
+        Map a=new HashMap();
+        a.put("1","Jack");
+        a.put("2","Rose");
+        a.put("3","Lucy");
+        Collection b=a.values();
+        Iterator c=b.iterator();
+        while(c.hasNext()){
+            Object d=c.next();
+            System.out.println(d);
+        }    
+    }
+}

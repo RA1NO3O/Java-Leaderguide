@@ -1,0 +1,13 @@
+//ArrayList集合
+package sept16th;
+import java.util.ArrayList;
+public class Example60{
+    public static void main(String[] args){
+        ArrayList list =new ArrayList();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        System.out.printf("集合的长度为%d,\n第2个元素为:%s",list.size(),list.get(1));
+        //集合和数组一样,索引的取值范围都是从0开始的,索引超出下标会抛出IndexOutOfBoundsException异常(与数组下标越界相同).
+    }
+}

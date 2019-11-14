@@ -1,0 +1,16 @@
+package sept16th;
+
+import java.util.HashSet;
+
+public class Example65{
+    public static void main(String[] args){
+        HashSet hs=new HashSet();
+        Stu stu1=new Stu("1","A");
+        Stu stu2=new Stu("2","B");
+        Stu stu3=new Stu("3","B");
+        hs.add(stu1);
+        hs.add(stu2);
+        hs.add(stu3);
+        System.out.println(hs);
+    }
+}

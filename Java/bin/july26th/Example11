@@ -1,0 +1,11 @@
+package july26th;
+class Example11{
+    //静态代码块(先执行)z
+    static{
+        System.out.printf("执行了%s类的静态代码块\n",Thread.currentThread().getStackTrace()[1].getClassName());
+    }
+    public static void main(String[] args){
+        Scb a=new Scb();
+        Scb b=new Scb();//
+    }
+}

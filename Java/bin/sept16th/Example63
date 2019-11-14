@@ -1,0 +1,12 @@
+package sept16th;
+import java.util.LinkedList;
+public class Example63{
+    public static void main(String[] args) {
+        LinkedList a=new LinkedList();
+        a.add("a");
+        a.add("b");
+        a.add("c");
+        a.addFirst("d");
+        System.out.println(a.get(0));
+    }
+}
