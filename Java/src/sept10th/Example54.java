@@ -1,9 +1,9 @@
 //包装类
 package sept10th;
 public class Example54{    
-    public static void main(String[] args){
-       int a=20;
-       Integer a1=new Integer(a) ;
+    public static void main(final String[] args){
+       final int a=20;
+       final Integer a1=new Integer(a) ;
             //👆创建了Integer对象a1,并将变量a作为参数传入
             //  从而将int变量转化为Integer类
        System.out.println(a1.toString());

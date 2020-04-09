@@ -1,9 +1,9 @@
 //arraycopy()方法
 package sept6th;
 public class Example48{
-    public static void main(String[] args){
-        char[] fromArray={'a','b','c','d'};//源数组
-        char[] toArray={'z','y','x','w'};//目标数组
+    public static void main(final String[] args){
+        final char[] fromArray={'a','b','c','d'};//源数组
+        final char[] toArray={'z','y','x','w'};//目标数组
         System.arraycopy(fromArray, 1, toArray, 2, 2);
         for(int i=0;i<toArray.length;i++){
             System.out.println(i+":"+toArray[i]);
